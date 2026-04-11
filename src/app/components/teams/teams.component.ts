@@ -1,0 +1,28 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-teams',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './teams.component.html',
+  styleUrl: './teams.component.css'
+})
+export class TeamsComponent {
+  teams = [
+    {
+      name: 'Jung Dogs Estrelic',
+      role: 'Northern Team',
+      rank: 'Diamond/Master',
+      members: ['Top: Kaenic', 'Jungle: Astro', 'Mid: Navy', 'ADC: Toanite', 'Support: Dretas'],
+      substitutes: ['Sub 1: Gollumfish', 'Sub 2: TBD']
+    },
+    {
+      name: 'Jung Dogs Vyre',
+      role: 'Western Team',
+      rank: 'Master',
+      members: ['Top: Kamazo', 'Jungle: Jhonn', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: Kayron'],
+      substitutes: ['Sub 1: TBD', 'Sub 2: TBD']
+    }
+  ];
+}

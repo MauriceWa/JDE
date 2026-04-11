@@ -1,0 +1,47 @@
+<div class="video-bg-container">
+  <img src="2222.gif" alt="Jung Dogs Esports League of Legends Tournament Qualifiers Crowd" class="video-bg">
+  <div class="bg-overlay"></div>
+</div>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a routerLink="/" class="nav-logo">
+      <img ngSrc="/Grayscale_Transparent_NoBuffer.png" alt="Jung Dogs Esports League of Legends Tournament Qualifiers Logo" width="50" height="40">
+    </a>
+    <button class="mobile-menu-toggle" (click)="toggleMenu()" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" [class.active]="isMenuOpen">
+      <ul class="nav-list">
+        <li>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
+        </li>
+        <li>
+          <a routerLink="/tournaments" routerLinkActive="active" (click)="closeMenu()">Tournaments</a>
+        </li>
+        <li>
+          <a routerLink="/teams" routerLinkActive="active" (click)="closeMenu()">Teams</a>
+        </li>
+        <li>
+          <a routerLink="/sponsors" routerLinkActive="active" (click)="closeMenu()">Sponsors</a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/YHPt2Btd4N" target="_blank" class="nav-discord-btn" (click)="closeMenu()">Discord</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="app-footer">
+  <p>&copy; 2026 Jung Dogs Esports. All rights reserved.</p>
+</footer>

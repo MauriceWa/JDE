@@ -1,0 +1,26 @@
+<section class="teams-container">
+  <h1 class="title-3d">Our Teams</h1>
+  <div class="teams-grid">
+    <article *ngFor="let team of teams" class="team-card-3d">
+      <header class="team-header">
+        <h2>{{ team.name }}</h2>
+        <span class="team-badge">{{ team.role }}</span>
+      </header>
+      <div class="team-info">
+        <p><strong>Rank:</strong> {{ team.rank }}</p>
+        <section class="roster">
+          <h3>Roster</h3>
+          <ul>
+            <li *ngFor="let member of team.members">{{ member }}</li>
+          </ul>
+        </section>
+        <section class="roster substitutes">
+          <h3>Substitutes</h3>
+          <ul>
+            <li *ngFor="let sub of team.substitutes">{{ sub }}</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>

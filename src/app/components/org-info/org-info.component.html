@@ -1,0 +1,92 @@
+<section class="org-hero">
+  <div class="hero-content">
+    <div class="logo-wrapper">
+      <img src="./FullLogo_Transparent.png" alt="Jung Dogs Esports League of Legends Open Tournament Qualifiers Logo" class="hero-logo" />
+    </div>
+
+    <div class="hero-slogan">
+      <h1 class="slogan-text">Built to outplay.</h1>
+    </div>
+  </div>
+</section>
+
+<section class="org-container">
+  <div class="tabs-container">
+    <nav class="tabs-header" aria-label="Organization Information Tabs">
+      <button class="tab-btn" [class.active]="activeTab === 'tournaments'" (click)="setActiveTab('tournaments')">
+        <span class="tab-icon" aria-hidden="true">🏆</span> Tournaments
+      </button>
+      <button class="tab-btn" [class.active]="activeTab === 'sponsors'" (click)="setActiveTab('sponsors')">
+        <span class="tab-icon" aria-hidden="true">🤝</span> Sponsors
+      </button>
+      <button class="tab-btn" [class.active]="activeTab === 'discord'" (click)="setActiveTab('discord')">
+        <span class="tab-icon" aria-hidden="true">💬</span> Discord
+      </button>
+      <button class="tab-btn" [class.active]="activeTab === 'contact'" (click)="setActiveTab('contact')">
+        <span class="tab-icon" aria-hidden="true">📧</span> Contact
+      </button>
+    </nav>
+
+    <div class="tab-content">
+      <article class="tab-pane" *ngIf="activeTab === 'tournaments'">
+        <header class="pane-header cyan">
+          <span class="pane-badge">Events</span>
+          <h2>Tournaments</h2>
+        </header>
+        <div class="pane-body">
+          <p>Check out our upcoming and completed tournaments. Join the elite and prove your skill on the Rift.</p>
+          <div class="pane-features">
+            <div class="feature"><span aria-hidden="true">✓</span> Competitive Play</div>
+            <div class="feature"><span aria-hidden="true">✓</span> Cash Prizes</div>
+          </div>
+          <a routerLink="/tournaments" class="action-btn cyan">View Tournaments</a>
+        </div>
+      </article>
+
+      <article class="tab-pane" *ngIf="activeTab === 'sponsors'">
+        <header class="pane-header orange">
+          <span class="pane-badge">Partners</span>
+          <h2>Sponsors</h2>
+        </header>
+        <div class="pane-body">
+          <p>Meet our partners who help us dominate the Rift every day. Join the network of excellence.</p>
+          <div class="pane-features">
+            <div class="feature"><span aria-hidden="true">✓</span> Official Gear</div>
+            <div class="feature"><span aria-hidden="true">✓</span> Brand Growth</div>
+          </div>
+          <a routerLink="/sponsors" class="action-btn orange">Our Sponsors</a>
+        </div>
+      </article>
+
+      <article class="tab-pane" *ngIf="activeTab === 'discord'">
+        <header class="pane-header purple">
+          <span class="pane-badge">Social</span>
+          <h2>Join Community</h2>
+        </header>
+        <div class="pane-body">
+          <p>Join our community on Discord. Find your next team, share clips, and stay updated.</p>
+          <div class="pane-features">
+            <div class="feature"><span aria-hidden="true">✓</span> Active LFG</div>
+            <div class="feature"><span aria-hidden="true">✓</span> Event Alerts</div>
+          </div>
+          <a href="https://discord.gg/YHPt2Btd4N" target="_blank" class="action-btn purple">Join Discord</a>
+        </div>
+      </article>
+
+      <article class="tab-pane" *ngIf="activeTab === 'contact'">
+        <header class="pane-header blue">
+          <span class="pane-badge">Support</span>
+          <h2>Get in Touch</h2>
+        </header>
+        <div class="pane-body">
+          <p>Get in touch with the Jung Dogs team for business inquiries, support, or feedback.</p>
+          <div class="pane-features">
+            <div class="feature"><span aria-hidden="true">✓</span> 24h Response</div>
+            <div class="feature"><span aria-hidden="true">✓</span> Business Collabs</div>
+          </div>
+          <a routerLink="/contact" class="action-btn blue">Contact Us</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

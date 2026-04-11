@@ -1,0 +1,32 @@
+<section class="tournaments-container">
+  <header>
+    <h1 class="title-3d">Tournaments</h1>
+    <p class="subtitle">Join our upcoming events and show your skills on the Rift.</p>
+  </header>
+
+  <div class="tournament-grid">
+    <article *ngFor="let tournament of tournaments" class="tournament-card-3d" [class.completed]="tournament.status === 'Completed'">
+      <div class="card-content">
+        <header class="card-header">
+          <h2 class="h3-style">{{ tournament.name }}</h2>
+          <span class="status-badge" [class.badge-upcoming]="tournament.status === 'Upcoming'">
+            {{ tournament.status }}
+          </span>
+        </header>
+        <div class="card-body">
+          <p class="date"><span aria-hidden="true">📅</span> <span class="sr-only">Date: </span> {{ tournament.date }}</p>
+          <p class="prizepool"><span aria-hidden="true">💰</span> <span class="sr-only">Prizepool: </span> {{ tournament.prizepool }}</p>
+          <p class="description">{{ tournament.description }}</p>
+        </div>
+        <footer class="card-footer">
+          <a *ngIf="tournament.status !== 'Completed'" href="https://discord.gg/YHPt2Btd4N" target="_blank" class="btn-3d">
+            Register Now
+          </a>
+          <button *ngIf="tournament.status === 'Completed'" class="btn-3d" disabled>
+            Registration Closed
+          </button>
+        </footer>
+      </div>
+    </article>
+  </div>
+</section>
