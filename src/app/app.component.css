@@ -168,7 +168,7 @@
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   transition: 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
   box-shadow: 0 0 5px rgba(255,255,255,0.2);
 }
