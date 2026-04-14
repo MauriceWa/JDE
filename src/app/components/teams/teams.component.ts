@@ -14,7 +14,7 @@ export class TeamsComponent {
       name: 'Jung Dogs Estrelic',
       role: 'Northern Team',
       rank: 'Diamond/Master',
-      members: ['Top: Kaenic', 'Jungle: Astro', 'Mid: Navy', 'ADC: Toanite', 'Support: Dretas'],
+      members: ['Top: Kaenic', 'Jungle: Astro', 'Mid: Navy', 'ADC: Touanité', 'Support: Dretas'],
       substitutes: ['Sub 1: Gollumfish', 'Sub 2: TBD']
     },
     {

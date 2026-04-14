@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
 export class TournamentsComponent {
   tournaments = [
     {
-      name: 'Jung Dogs Autumn Open',
-      date: 'May 2026',
-      status: 'Upcoming',
+      name: 'Jung Dog Trials ',
+      date: '24th of April 2026',
+      status: 'Register is Open',
       prizepool: 'TBD',
       description: 'Our trial open tournament for all League of Legends teams.'
     },
