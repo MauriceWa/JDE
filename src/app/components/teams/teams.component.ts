@@ -15,14 +15,14 @@ export class TeamsComponent {
       role: 'Northern Team',
       rank: 'Diamond/Master',
       members: ['Top: Kaenic', 'Jungle: Astro', 'Mid: Navy', 'ADC: Touanité', 'Support: Dretas'],
-      substitutes: ['Sub 1: Gollumfish', 'Sub 2: TBD']
+      substitutes: ['Sub 1: Gollumfish', 'Sub 2: OPEN']
     },
     {
       name: 'Jung Dogs Vyre',
       role: 'Western Team',
       rank: 'Master',
-      members: ['Top: Kamazo', 'Jungle: Jhonn', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: Kayron'],
-      substitutes: ['Sub 1: TBD', 'Sub 2: TBD']
+      members: ['Top: Kamazo', 'Jungle: OPEN', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: OPEN'],
+      substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN']
     }
   ];
 }
