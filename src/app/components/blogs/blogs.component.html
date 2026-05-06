@@ -1,0 +1,56 @@
+<section class="blogs-page-container">
+  <header class="page-header-3d">
+    <h1 class="title-3d">{{ selectedBlog ? 'Blog Detail' : 'Our Blogs' }}</h1>
+    <p class="subtitle" *ngIf="!selectedBlog">Stay updated with the latest news and insights from the Rift.</p>
+  </header>
+
+  <main class="pane-body">
+    <aside class="blog-sidebar" *ngIf="!selectedBlog">
+      <section class="patch-notes-card">
+        <h3>Organization Updates</h3>
+        <div class="updates-container" *ngIf="latestUpdates.length > 0">
+          <div *ngFor="let update of latestUpdates" class="update-item"
+               [ngClass]="{
+                 'addition': update.action === 'Joined',
+                 'departure': update.action === 'Left',
+                 'tournament': update.type === 'tournament'
+               }">
+            <div class="update-header">
+              <span class="update-name">{{ update.name }}</span>
+              <time class="update-date" [attr.datetime]="update.date">{{ update.date }}</time>
+            </div>
+            <div class="update-details">
+              <span class="update-role">{{ update.role }}</span>
+              <span class="update-action">{{ update.action }}</span>
+            </div>
+          </div>
+        </div>
+        <p *ngIf="latestUpdates.length === 0">Loading updates...</p>
+      </section>
+    </aside>
+
+    <section class="blog-list" *ngIf="!selectedBlog">
+      <article *ngFor="let blog of blogs" class="blog-item">
+        <h3>{{ blog.title }}</h3>
+        <div class="blog-meta">
+          <time [attr.datetime]="blog.date">{{ blog.date }}</time> • <span>{{ blog.author }}</span>
+        </div>
+        <p>{{ blog.summary }}</p>
+        <button (click)="selectBlog(blog)" class="read-more">Read More →</button>
+      </article>
+    </section>
+
+    <div class="blog-detail" *ngIf="selectedBlog">
+      <button (click)="clearSelectedBlog()" class="back-btn">← Back to Blogs</button>
+      <article class="full-blog">
+        <h3>{{ selectedBlog.title }}</h3>
+        <div class="blog-meta">
+          <time [attr.datetime]="selectedBlog.date">{{ selectedBlog.date }}</time> • <span>{{ selectedBlog.author }}</span>
+        </div>
+        <div class="blog-content">
+          <p>{{ selectedBlog.content }}</p>
+        </div>
+      </article>
+    </div>
+  </main>
+</section>
