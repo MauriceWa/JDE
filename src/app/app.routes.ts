@@ -4,12 +4,14 @@ import { TournamentsComponent } from './components/tournaments/tournaments.compo
 import { TeamsComponent } from './components/teams/teams.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
 
 export const routes: Routes = [
   { path: '', component: OrgInfoComponent },
   { path: 'tournaments', component: TournamentsComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'sponsors', component: SponsorsComponent },
+  { path: 'blogs', component: BlogsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];

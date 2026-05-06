@@ -23,4 +23,23 @@
       </div>
     </article>
   </div>
+
+  <div class="apply-container">
+    <a href="#" class="apply-button">Apply to Join Our Teams</a>
+  </div>
+
+  <section class="staff-section">
+    <h2 class="title-3d staff-title">Our Staff</h2>
+    <div class="staff-grid">
+      <article *ngFor="let member of staff" class="staff-card-3d">
+        <header class="staff-header">
+          <h3>{{ member.name }}</h3>
+          <span class="staff-role">{{ member.role }}</span>
+        </header>
+        <div class="staff-info">
+          <p>{{ member.description }}</p>
+        </div>
+      </article>
+    </div>
+  </section>
 </section>

@@ -12,7 +12,7 @@ export class TournamentsComponent {
   tournaments = [
     {
       name: 'Jung Dog Trials ',
-      date: '24th of April 2026',
+      date: '24th of May 2026',
       status: 'Register is Open',
       prizepool: 'TBD',
       description: 'Our trial open tournament for all League of Legends teams.'

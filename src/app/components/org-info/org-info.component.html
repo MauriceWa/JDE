@@ -16,6 +16,9 @@
       <button class="tab-btn" [class.active]="activeTab === 'tournaments'" (click)="setActiveTab('tournaments')">
         <span class="tab-icon" aria-hidden="true">🏆</span> Tournaments
       </button>
+      <button class="tab-btn" [class.active]="activeTab === 'blogs'" (click)="setActiveTab('blogs')">
+        <span class="tab-icon" aria-hidden="true">📰</span> Blogs
+      </button>
       <button class="tab-btn" [class.active]="activeTab === 'sponsors'" (click)="setActiveTab('sponsors')">
         <span class="tab-icon" aria-hidden="true">🤝</span> Sponsors
       </button>
@@ -40,6 +43,21 @@
             <div class="feature"><span aria-hidden="true">✓</span> Cash Prizes</div>
           </div>
           <a routerLink="/tournaments" class="action-btn cyan">View Tournaments</a>
+        </div>
+      </article>
+
+      <article class="tab-pane" *ngIf="activeTab === 'blogs'">
+        <header class="pane-header green">
+          <span class="pane-badge">News</span>
+          <h2>Blogs</h2>
+        </header>
+        <div class="pane-body">
+          <p>Read our latest news, patches, and organizational updates. Stay in the loop with Jung Dogs.</p>
+          <div class="pane-features">
+            <div class="feature"><span aria-hidden="true">✓</span> Pro Insights</div>
+            <div class="feature"><span aria-hidden="true">✓</span> Meta Updates</div>
+          </div>
+          <a routerLink="/blogs" class="action-btn green">Read All Blogs</a>
         </div>
       </article>
 
