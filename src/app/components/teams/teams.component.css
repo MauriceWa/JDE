@@ -127,6 +127,57 @@
   color: #ff8c00;
 }
 
+/* Schedule Section Styles */
+.schedule-section h3 {
+  color: #ff8c00;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.schedule-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 5px;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.schedule-day {
+  color: #ff8c00;
+  font-weight: bold;
+  min-width: 80px;
+}
+
+.schedule-time {
+  color: #00d4ff;
+  margin: 0 10px;
+}
+
+.schedule-event {
+  color: #fff;
+  text-align: right;
+  flex-grow: 1;
+}
+
 @media (max-width: 768px) {
   .title-3d {
     font-size: 2rem;
@@ -134,6 +185,44 @@
   .team-card-3d:hover {
     transform: translateY(-5px);
   }
+}
+
+.general-substitutes-container {
+  margin-top: 40px;
+  perspective: 1000px;
+}
+
+.general-sub-card {
+  max-width: 100%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.general-sub-card::before {
+  display: none;
+}
+
+.general-sub-card:hover {
+  transform: translateY(-10px) rotateX(2deg) !important;
+}
+
+.substitutes-horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.substitutes-horizontal-list li {
+  border-bottom: none !important;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 15px !important;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.substitutes-horizontal-list li:hover {
+  padding-left: 15px !important;
+  background: rgba(255, 140, 0, 0.1);
+  border-color: #ff8c00;
 }
 
 .apply-container {

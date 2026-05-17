@@ -20,6 +20,34 @@
             <li *ngFor="let sub of team.substitutes">{{ sub }}</li>
           </ul>
         </section>
+        <section class="schedule-section" *ngIf="team.schedule && team.schedule.length > 0">
+          <h3>Schedule</h3>
+          <div class="schedule-grid">
+            <div *ngFor="let item of team.schedule" class="schedule-item">
+              <span class="schedule-day">{{ item.day }}</span>
+              <span class="schedule-time">{{ item.time }}</span>
+              <span class="schedule-event">{{ item.event }}</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+  <div class="general-substitutes-container">
+    <article class="team-card-3d general-sub-card">
+      <header class="team-header">
+        <h2>{{ generalSubstitutes.name }}</h2>
+        <span class="team-badge">{{ generalSubstitutes.role }}</span>
+      </header>
+      <div class="team-info">
+        <p><strong>Rank:</strong> {{ generalSubstitutes.rank }}</p>
+        <section class="roster">
+          <h3>Members</h3>
+          <ul class="substitutes-horizontal-list">
+            <li *ngFor="let member of generalSubstitutes.members">{{ member }}</li>
+          </ul>
+        </section>
       </div>
     </article>
   </div>

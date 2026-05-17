@@ -20,6 +20,20 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Jung Dogs Esports is now on X!',
+      date: 'May 17, 2026',
+      summary: 'Follow us on X (formerly Twitter) for the latest updates and news!',
+      content: 'We are excited to announce that Jung Dogs Esports has officially joined X! Follow us at https://x.com/JungDogsEsports to stay up to date with our latest news, match results, and more. Your support means everything to us as we continue to grow our community!',
+      author: 'Management'
+    },
+    {
+      title: 'Expanding Our Reach: Prime League and UK League',
+      date: 'May 16, 2026',
+      summary: 'Jung Dogs Esports is proud to announce our entry into the Prime League and UK League with teams DEV and Molotov.',
+      content: 'As part of our commitment to competitive excellence, we are thrilled to announce that team DEV will be representing us in the Prime League, while team Molotov will be competing in the UK League. This expansion marks a significant milestone for Jung Dogs Esports as we continue to establish our presence in major regional leagues across Europe. We are currently finalizing our rosters and look forward to showing what our teams can do on the big stage!',
+      author: 'Management'
+    },
+    {
       title: 'Welcome to Jung Dogs Esports',
       date: 'April 20, 2026',
       summary: 'Exciting news as we officially launch our new organizational website and team rosters!',
@@ -41,9 +55,12 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
-      { date: 'May 6', name: 'Akini', role: 'Jungler', action: 'Joined' },
-      { type: 'tournament', date: 'May 2', name: 'Vyre | Benelux Ascend Series', role: 'Open Qualifier 3', action: 'DNF' },
+      { date: 'May 17', name: 'Harry', role: 'ADC', action: 'Joined' },
+      { date: 'May 14', name: 'Tilko185', role: 'Substitute', action: 'Joined' },
+      { date: 'May 9', name: 'Esat', role: 'Substitute', action: 'Joined' },
       { date: 'May 3', name: 'Brunooo', role: 'Jungle', action: 'Left' },
+      { date: 'May 3', name: 'Tarquin', role: 'Support', action: 'Left' },
+      { type: 'tournament', date: 'May 2', name: 'Vyre | Benelux Ascend Series', role: 'Open Qualifier 3', action: 'DNF' },
       { date: 'Apr 29', name: 'Sayonara', role: 'Analyst', action: 'Joined' },
       { date: 'Apr 28', name: 'Toxic', role: 'Analyst', action: 'Joined' },
       { date: 'Apr 25', name: 'tilko185', role: 'Substitute', action: 'Joined' },

@@ -12,27 +12,56 @@ export class TeamsComponent {
   teams = [
     {
       name: 'Estrelic',
-      role: 'Northern Team',
+      role: 'NLC Team',
       rank: 'Diamond/Master',
       members: ['Top: Kaenic', 'Jungle: Astro', 'Mid: Navy', 'ADC: Touanité', 'Support: Dretas'],
-      substitutes: ['Sub 1: Gollumfish', 'Sub 2: OPEN']
+      substitutes: ['Sub 1: Astro', 'Sub 2: OPEN'],
+      schedule: [
+        { day: 'Wednesday', time: '20:30 CET', event: 'Scrims' },
+        { day: 'Thursday', time: '19:00 CET', event: 'Scrims' },
+        { day: 'Saturday', time: '12:00 CET', event: 'Scrims' },
+        { day: 'Sunday', time: '12:00 CET', event: 'Scrims' }
+      ]
     },
     {
       name: 'Vyre',
-      role: 'Western Team',
+      role: 'BENELUX Team',
       rank: 'Master',
       members: ['Top: Kamazo', 'Jungle: OPEN', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: Tarquin'],
-      substitutes: ['Sub 1: Mika', 'Sub 2: OPEN']
+      substitutes: ['Sub 1: Esat', 'Sub 2: OPEN'],
+      schedule: [
+        { day: 'Wednesday', time: '19:00 CET', event: 'Scrims' },
+        { day: 'Saturday', time: '19:00 CET', event: 'Scrims' }
+      ]
     },
     {
       name: 'Dev',
-      role: 'Western Team',
+      role: 'DACH Team',
       rank: 'Master',
       members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: OPEN', 'ADC: OPEN', 'Support: OPEN'],
-      substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN']
+      substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
+      schedule: [
+        { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
+        { day: 'Friday', time: '19:00 CET', event: 'Scrims' }
+      ]
+    },
+    {
+      name: 'Molotov',
+      role: 'UK Team',
+      rank: 'Master',
+      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: OPEN', 'ADC: OPEN', 'Support: OPEN'],
+      substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
+      schedule: []
     }
-
   ];
+
+  generalSubstitutes = {
+    name: 'General substitutes',
+    role: 'Substitutes',
+    rank: 'Emerald/Master',
+    members: ['Tilko185'],
+    substitutes: []
+  };
 
   staff = [
     {
