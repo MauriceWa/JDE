@@ -14,7 +14,7 @@ export class TeamsComponent {
       name: 'Estrelic',
       role: 'NLC Team',
       rank: 'Diamond/Master',
-      members: ['Top: Kaenic', 'Jungle: Astro', 'Mid: Navy', 'ADC: Touanité', 'Support: Dretas'],
+      members: ['Top: Kaenic', 'Jungle: Gollumfish', 'Mid: Navy', 'ADC: Touanité', 'Support: Dretas'],
       substitutes: ['Sub 1: Astro', 'Sub 2: OPEN'],
       schedule: [
         { day: 'Wednesday', time: '20:30 CET', event: 'Scrims' },
@@ -27,7 +27,7 @@ export class TeamsComponent {
       name: 'Vyre',
       role: 'BENELUX Team',
       rank: 'Master',
-      members: ['Top: Kamazo', 'Jungle: OPEN', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: Tarquin'],
+      members: ['Top: Kamazo', 'Jungle: OPEN', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: KrayonBlaDe'],
       substitutes: ['Sub 1: Esat', 'Sub 2: OPEN'],
       schedule: [
         { day: 'Wednesday', time: '19:00 CET', event: 'Scrims' },
