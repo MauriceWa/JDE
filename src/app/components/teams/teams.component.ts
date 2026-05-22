@@ -14,13 +14,13 @@ export class TeamsComponent {
       name: 'Estrelic',
       role: 'NLC Team',
       rank: 'Diamond/Master',
-      members: ['Top: Kaenic', 'Jungle: Gollumfish', 'Mid: Navy', 'ADC: Touanité', 'Support: Dretas'],
+      members: ['Top: Kaenic', 'Jungle: Gollumfish', 'Mid: Navy', 'ADC: OPEN', 'Support: Dretas'],
       substitutes: ['Sub 1: Astro', 'Sub 2: OPEN'],
       schedule: [
         { day: 'Wednesday', time: '20:30 CET', event: 'Scrims' },
         { day: 'Thursday', time: '19:00 CET', event: 'Scrims' },
-        { day: 'Saturday', time: '12:00 CET', event: 'Scrims' },
-        { day: 'Sunday', time: '12:00 CET', event: 'Scrims' }
+        { day: 'Saturday', time: '12:00-14:00 CET', event: 'Scrims' },
+        { day: 'Sunday', time: '12:00-14:00 CET', event: 'Scrims' }
       ]
     },
     {
@@ -38,7 +38,7 @@ export class TeamsComponent {
       name: 'Dev',
       role: 'DACH Team',
       rank: 'Master',
-      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: OPEN', 'ADC: OPEN', 'Support: OPEN'],
+      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: FILLED', 'ADC: OPEN', 'Support: OPEN'],
       substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
       schedule: [
         { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
@@ -56,10 +56,10 @@ export class TeamsComponent {
   ];
 
   generalSubstitutes = {
-    name: 'General substitutes',
+    name: 'Substitutes list',
     role: 'Substitutes',
     rank: 'Emerald/Master',
-    members: ['Tilko185'],
+    members: ['Tilko185', 'Esat', 'Astro', 'Mika'],
     substitutes: []
   };
 

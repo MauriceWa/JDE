@@ -48,7 +48,7 @@
           <time [attr.datetime]="selectedBlog.date">{{ selectedBlog.date }}</time> • <span>{{ selectedBlog.author }}</span>
         </div>
         <div class="blog-content">
-          <p>{{ selectedBlog.content }}</p>
+          <p [innerHTML]="selectedBlog.content"></p>
         </div>
       </article>
     </div>

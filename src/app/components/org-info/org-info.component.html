@@ -10,6 +10,40 @@
   </div>
 </section>
 
+<section class="clips-section">
+  <div class="clips-container">
+    <header class="section-header">
+      <span class="pane-badge">Highlights</span>
+      <div class="title-container">
+        <h2>Organisation Clips</h2>
+      </div>
+    </header>
+    <div class="video-container-wrapper">
+      <button class="nav-btn prev-btn" (click)="prevClip()" aria-label="Previous Clip">
+        <span aria-hidden="true">‹</span>
+      </button>
+
+      <div class="video-grid" [class.sliding]="isAnimating">
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video [src]="clips[currentClipIndex].videoUrl" controls preload="metadata">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-info">
+            <h3>{{ clips[currentClipIndex].title }}</h3>
+            <p>{{ clips[currentClipIndex].description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-btn next-btn" (click)="nextClip()" aria-label="Next Clip">
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+  </div>
+</section>
+
 <section class="org-container">
   <div class="tabs-container">
     <nav class="tabs-header" aria-label="Organization Information Tabs">

@@ -20,10 +20,17 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Submit Your Highlights!',
+      date: 'May 23, 2026',
+      summary: 'We are now accepting community clips to be featured on our homepage!',
+      content: 'Do you have an insane outplay or a clutch moment you want to share? Jung Dogs Esports is now accepting clip submissions from our community! You can send your best highlights to our official email or share them in our Discord server. Selected clips will be featured right here on our homepage in the Organisation Clips section. We can\'t wait to see what you\'ve got!',
+      author: 'Management'
+    },
+    {
       title: 'Jung Dogs Esports is now on X!',
       date: 'May 17, 2026',
       summary: 'Follow us on X (formerly Twitter) for the latest updates and news!',
-      content: 'We are excited to announce that Jung Dogs Esports has officially joined X! Follow us at https://x.com/JungDogsEsports to stay up to date with our latest news, match results, and more. Your support means everything to us as we continue to grow our community!',
+      content: 'We are excited to announce that Jung Dogs Esports has officially joined X! Follow us at <a href="https://x.com/JungDogsEsports" target="_blank">https://x.com/JungDogsEsports</a> to stay up to date with our latest news, match results, and more. Your support means everything to us as we continue to grow our community!',
       author: 'Management'
     },
     {
