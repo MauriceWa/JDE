@@ -63,6 +63,7 @@ export class BlogsComponent implements OnInit {
   generateUpdates() {
     const updates: any[] = [
       { date: 'May 17', name: 'Harry', role: 'ADC', action: 'Joined' },
+      { date: 'May 9', name: 'Ihwa', role: 'Substitute', action: 'Joined' },
       { date: 'May 14', name: 'Tilko185', role: 'Substitute', action: 'Joined' },
       { date: 'May 9', name: 'Esat', role: 'Substitute', action: 'Joined' },
       { date: 'May 3', name: 'Brunooo', role: 'Jungle', action: 'Left' },
@@ -72,6 +73,7 @@ export class BlogsComponent implements OnInit {
       { date: 'Apr 28', name: 'Toxic', role: 'Analyst', action: 'Joined' },
       { date: 'Apr 25', name: 'tilko185', role: 'Substitute', action: 'Joined' },
       { date: 'Apr 25', name: 'Save3rs', role: 'Coach', action: 'Joined' },
+      { date: 'Apr 23', name: 'Kasumi', role: 'Substitute', action: 'Joined' },
       { date: 'Apr 20', name: 'Tarquin', role: 'Support', action: 'Joined' },
       { date: 'Apr 19', name: 'Kayron', role: 'Support', action: 'Left' },
       { date: 'Apr 19', name: 'Brunooo', role: 'Jungle', action: 'Joined' },

@@ -30,8 +30,13 @@ export class OrgInfoComponent {
     },
     {
       title: 'Competitive Edge',
-      description: 'High-level execution and map awareness in a ranked match.',
+      description: 'High level execution and map awareness in a ranked match.',
       videoUrl: 'League of Legends_05-18-2026_23-30-34-615.mp4'
+    },
+    {
+      title: 'Simply Effective',
+      description: 'Astro (Jungler) landing a massive Hecarim ultimate.',
+      videoUrl: 'Epic-Move-453.mp4'
     }
   ];
 

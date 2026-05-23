@@ -35,10 +35,10 @@ export class TeamsComponent {
       ]
     },
     {
-      name: 'Dev',
+      name: 'Hyperion',
       role: 'DACH Team',
       rank: 'Master',
-      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: FILLED', 'ADC: OPEN', 'Support: OPEN'],
+      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: FILLED', 'ADC: OPEN', 'Support: TRYOUTS ONGOING'],
       substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
       schedule: [
         { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
@@ -49,7 +49,7 @@ export class TeamsComponent {
       name: 'Molotov',
       role: 'UK Team',
       rank: 'Master',
-      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: OPEN', 'ADC: OPEN', 'Support: OPEN'],
+      members: ['Top: Kamazo', 'Jungle: TRYOUTS ONGOING', 'Mid: TRYOUTS ONGOING', 'ADC: Hisoka', 'Support: OPEN'],
       substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
       schedule: []
     }
@@ -59,7 +59,7 @@ export class TeamsComponent {
     name: 'Substitutes list',
     role: 'Substitutes',
     rank: 'Emerald/Master',
-    members: ['Tilko185', 'Esat', 'Astro', 'Mika'],
+    members: ['Tilko185', 'Esat', 'Astro', 'Kasumi', 'Ihwa',],
     substitutes: []
   };
 
