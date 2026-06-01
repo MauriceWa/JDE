@@ -1,16 +1,17 @@
 .sponsors-hero {
   background: linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.9));
   min-height: 80vh;
-  padding: 120px 20px 60px;
+  padding: 80px 20px 60px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .hero-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .hero-title {
@@ -18,70 +19,139 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   letter-spacing: 2px;
   text-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
 }
 
-.sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  justify-items: center;
-}
-
-.sponsor-card {
-  background: rgba(30, 30, 30, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 140, 0, 0.2);
-  border-radius: 20px;
-  padding: 40px;
-  transition: all 0.3s ease;
+.partners-list {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.partner-item {
+  background: rgba(30, 30, 30, 0.4);
+  border: 1px solid rgba(255, 140, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  transition: all 0.3s ease;
+  gap: 20px;
 }
 
-.sponsor-card:hover {
-  transform: translateY(-10px);
+.partner-item.coaching {
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(30, 30, 30, 0.4));
+  border-left: 4px solid #ff8c00;
+}
+
+.partner-item.recruitment {
+  background: rgba(30, 30, 30, 0.2);
+  border: 1px dashed rgba(255, 140, 0, 0.3);
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+.partner-item.recruitment:hover {
+  background: rgba(30, 30, 30, 0.4);
+  opacity: 1;
+}
+
+.partner-item:hover {
+  background: rgba(40, 40, 40, 0.6);
   border-color: var(--primary, #ff8c00);
-  box-shadow: 0 15px 30px rgba(255, 140, 0, 0.1);
+  transform: translateX(5px);
 }
 
-.card-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.partner-item.recruitment .partner-link {
+  background-color: transparent;
+  border: 1px solid var(--primary, #ff8c00);
+  color: var(--primary, #ff8c00);
 }
 
-.sponsor-card h2 {
+.partner-item.recruitment .partner-link:hover {
+  background-color: var(--primary, #ff8c00);
+  color: #000;
+}
+
+.partner-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.partner-icon {
+  font-size: 2rem;
+  background: rgba(255, 140, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.partner-info h2 {
   color: #ffffff;
-  margin-bottom: 15px;
+  margin: 0 0 5px 0;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-.flavor-text {
-  color: var(--text-muted, #aaaaaa);
-  line-height: 1.6;
-  margin-bottom: 30px;
-  font-style: italic;
+.partner-info p {
+  color: #cccccc;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-.contact-btn {
-  display: inline-block;
-  padding: 12px 30px;
+.partner-link {
+  padding: 10px 20px;
   background-color: var(--primary, #ff8c00);
   color: #000;
   text-decoration: none;
   font-weight: 700;
-  border-radius: 30px;
+  border-radius: 8px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 0.9rem;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
 
-.contact-btn:hover {
+.partner-link:hover {
   background-color: #ffffff;
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .sponsors-hero {
+    padding-top: 60px;
+  }
+
+  .hero-title {
+    margin-bottom: 40px;
+  }
+
+  .partner-item {
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .partner-main {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .partner-link {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

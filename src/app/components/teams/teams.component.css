@@ -39,7 +39,7 @@
 }
 
 .team-card-3d:hover {
-  transform: rotateY(10deg) rotateX(5deg) translateY(-10px);
+  transform: rotateY(4deg) rotateX(2deg) translateY(-10px);
   box-shadow: -15px 20px 30px rgba(0,0,0,0.5);
   border-color: var(--primary);
 }
@@ -202,7 +202,7 @@
 }
 
 .general-sub-card:hover {
-  transform: translateY(-10px) rotateX(2deg) !important;
+  transform: translateY(-10px) rotateX(1deg) !important;
 }
 
 .substitutes-horizontal-list {

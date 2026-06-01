@@ -7,8 +7,21 @@
   justify-content: center;
   text-align: center;
   perspective: 1500px;
-  overflow: visible;
+  overflow: hidden;
   box-sizing: border-box;
+  position: relative;
+}
+
+.org-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, var(--bg-dark));
+  pointer-events: none;
+  z-index: 10;
 }
 
 .hero-content {
@@ -75,6 +88,68 @@
     0 0 40px rgba(0, 0, 0, 0.8);
   animation: slogan-fade-in 1.5s ease-out;
   white-space: nowrap;
+}
+
+.coming-soon {
+  margin-top: 20px;
+  animation: slogan-fade-in 2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.coming-soon-badge {
+  background: var(--primary);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
+  animation: pulse-glow 2s infinite alternate;
+}
+
+.coming-soon-text {
+  color: #ffffff;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tournament-discord-btn {
+  margin-top: 10px;
+  background: var(--accent-purple);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(157, 0, 255, 0.3);
+}
+
+.tournament-discord-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(157, 0, 255, 0.5);
+  background: #b533ff;
+}
+
+.tournament-discord-btn .btn-icon {
+  font-size: 1.2rem;
+}
+
+@keyframes pulse-glow {
+  from { box-shadow: 0 0 10px rgba(255, 140, 0, 0.4); transform: scale(1); }
+  to { box-shadow: 0 0 25px rgba(255, 140, 0, 0.7); transform: scale(1.05); }
 }
 
 @keyframes slogan-fade-in {
@@ -210,9 +285,10 @@
 }
 
 .clips-section {
-  padding: 60px 20px;
+  padding: 100px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section-header {

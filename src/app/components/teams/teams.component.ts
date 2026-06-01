@@ -19,8 +19,8 @@ export class TeamsComponent {
       schedule: [
         { day: 'Wednesday', time: '20:30 CET', event: 'Scrims' },
         { day: 'Thursday', time: '19:00 CET', event: 'Scrims' },
-        { day: 'Saturday', time: '12:00-14:00 CET', event: 'Scrims' },
-        { day: 'Sunday', time: '12:00-14:00 CET', event: 'Scrims' }
+        { day: 'Saturday', time: '14:00 CET', event: 'Scrims' },
+        { day: 'Sunday', time: '14:00 CET', event: 'Scrims' }
       ]
     },
     {
@@ -41,17 +41,18 @@ export class TeamsComponent {
       members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: FILLED', 'ADC: OPEN', 'Support: TRYOUTS ONGOING'],
       substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
       schedule: [
-        { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
-        { day: 'Friday', time: '19:00 CET', event: 'Scrims' }
       ]
     },
     {
       name: 'Molotov',
       role: 'UK Team',
       rank: 'Master',
-      members: ['Top: Kamazo', 'Jungle: TRYOUTS ONGOING', 'Mid: TRYOUTS ONGOING', 'ADC: Hisoka', 'Support: OPEN'],
+      members: ['Top: Kamazo', 'Jungle: Robert123', 'Mid: TRYOUTS ONGOING', 'ADC: Hisoka', 'Support: Pelican'],
       substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
-      schedule: []
+      schedule: [
+        { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
+        { day: 'Friday', time: '19:00 CET', event: 'Scrims' }
+      ]
     }
   ];
 
@@ -60,7 +61,7 @@ export class TeamsComponent {
     role: 'Substitutes',
     rank: 'Emerald/Master',
     members: ['Tilko185', 'Esat', 'Astro', 'Kasumi', 'Ihwa',],
-    substitutes: []
+    substitutes: [],
   };
 
   staff = [

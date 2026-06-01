@@ -20,6 +20,20 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'New Partners: BotDiff Coaching',
+      date: 'June 1, 2026',
+      summary: 'We are excited to announce our partnership with BotDiff Coaching, led by Krayonblade and Degemic!',
+      content: 'Jung Dogs Esports is proud to welcome Krayonblade and Degemic as our official coaching partners. Through their platform, <a href="https://botdiffcoaching.com" target="_blank">botdiffcoaching.com</a>, they provide top-tier coaching services to help players master the Rift. This partnership marks a significant step in our commitment to player development and excellence.',
+      author: 'Management'
+    },
+    {
+      title: 'Molotov Roster Complete!',
+      date: 'May 31, 2026',
+      summary: 'Our UK League team, Molotov, is now fully rostered and ready for action!',
+      content: 'We are thrilled to announce that our UK team, Molotov, has officially finalized its roster. After an intensive scouting and tryout period, we have assembled a powerhouse lineup: Kamazo in the Top lane, Robert123 in the Jungle, Hisoka as ADC, and Pelican as Support. This talented group of players is already hard at work in scrims, preparing to represent Jung Dogs Esports in the UK League. We are confident in their potential and can\'t wait to see them compete!',
+      author: 'Management'
+    },
+    {
       title: 'Submit Your Highlights!',
       date: 'May 23, 2026',
       summary: 'We are now accepting community clips to be featured on our homepage!',
@@ -62,6 +76,10 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'May 29', name: 'Pelican', role: 'Support ', action: 'Joined' },
+      { date: 'May 28', name: 'Hisoka', role: 'ADC ', action: 'Joined' },
+      { date: 'May 26', name: 'Robert123', role: 'Jungle ', action: 'Joined' },
+      { date: 'May 25', name: 'Kamazo', role: 'Top ', action: 'Joined' },
       { date: 'May 17', name: 'Harry', role: 'ADC', action: 'Joined' },
       { date: 'May 9', name: 'Ihwa', role: 'Substitute', action: 'Joined' },
       { date: 'May 14', name: 'Tilko185', role: 'Substitute', action: 'Joined' },
