@@ -20,6 +20,13 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Fuel Your Game: Partnering with DUBBY',
+      date: 'June 3, 2026',
+      summary: 'We are thrilled to announce our official partnership with DUBBY Energy!',
+      content: 'Jung Dogs Esports is excited to partner with DUBBY Energy to keep our players focused and energized during those intense matches on the Rift. DUBBY offers clean energy for gamers without the crash. Use our official discount code <strong>JUNGDOGSESPORTS</strong> at checkout for a special discount! Check out their full range at <a href="https://www.dubby.gg/discount/JUNGDOGSESPORTS?ref=xhoognfp" target="_blank">dubby.gg</a> and join the energy revolution with the pack.',
+      author: 'Management'
+    },
+    {
       title: 'New Partners: BotDiff Coaching',
       date: 'June 1, 2026',
       summary: 'We are excited to announce our partnership with BotDiff Coaching, led by Krayonblade and Degemic!',
@@ -76,6 +83,7 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'Jun 2', name: 'Jhon WEAKKK', role: 'Jungle ', action: 'Joined' },
       { date: 'May 29', name: 'Pelican', role: 'Support ', action: 'Joined' },
       { date: 'May 28', name: 'Hisoka', role: 'ADC ', action: 'Joined' },
       { date: 'May 26', name: 'Robert123', role: 'Jungle ', action: 'Joined' },

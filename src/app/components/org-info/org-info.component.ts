@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {RouterLink} from "@angular/router";
 
+interface Clip {
+  title: string;
+  description: string;
+  videoUrl: string;
+  profileUrl?: string;
+}
+
 @Component({
   selector: 'app-org-info',
   standalone: true,
@@ -17,7 +24,7 @@ export class OrgInfoComponent {
   currentClipIndex = 0;
   isAnimating = false;
 
-  clips = [
+  clips: Clip[] = [
     {
       title: 'Solo Queue Dominance',
       description: 'A clinical display of mechanics in a high-elo ranked match.',
@@ -37,6 +44,16 @@ export class OrgInfoComponent {
       title: 'Simply Effective',
       description: 'Astro (Jungler) landing a massive Hecarim ultimate.',
       videoUrl: 'Epic-Move-453.mp4'
+    },
+    {
+      title: 'Estrelic Synergy',
+      description: 'Team Estrelic combining their ults and having a blast.',
+      videoUrl: 'dretas clip1.mp4'
+    },
+    {
+      title: 'Vyre Teamfight',
+      description: 'Team Vyre performing an incredible teamfight.',
+      videoUrl: '0f4bd22d-8cbb-47a7-a101-b3ad7051ebb3.mp4'
     }
   ];
 

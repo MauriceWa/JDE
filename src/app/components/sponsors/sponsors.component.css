@@ -49,6 +49,11 @@
   border-left: 4px solid #ff8c00;
 }
 
+.partner-item.dubby {
+  background: linear-gradient(135deg, rgba(0, 162, 255, 0.1), rgba(30, 30, 30, 0.4));
+  border-left: 4px solid #00a2ff;
+}
+
 .partner-item.recruitment {
   background: rgba(30, 30, 30, 0.2);
   border: 1px dashed rgba(255, 140, 0, 0.3);

@@ -411,6 +411,16 @@
   line-height: 1.4;
 }
 
+.video-info p ::ng-deep a {
+  color: inherit !important;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.video-info p ::ng-deep a:hover {
+  opacity: 0.8;
+}
+
 
 .tabs-container {
   background: rgba(20, 20, 20, 0.9);
@@ -443,6 +453,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 .tab-btn:hover {

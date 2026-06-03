@@ -40,7 +40,12 @@
           </div>
           <div class="video-info">
             <h3>{{ clips[currentClipIndex].title }}</h3>
-            <p>{{ clips[currentClipIndex].description }}</p>
+            <p>
+              <ng-container *ngIf="clips[currentClipIndex].profileUrl; else noUrl">
+                <a [href]="clips[currentClipIndex].profileUrl" target="_blank">{{ clips[currentClipIndex].description }}</a>
+              </ng-container>
+              <ng-template #noUrl>{{ clips[currentClipIndex].description }}</ng-template>
+            </p>
           </div>
         </div>
       </div>

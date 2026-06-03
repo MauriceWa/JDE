@@ -134,6 +134,16 @@
   font-size: 1rem;
 }
 
+.update-name ::ng-deep a {
+  color: inherit !important;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.update-name ::ng-deep a:hover {
+  opacity: 0.8;
+}
+
 .update-date {
   font-size: 0.75rem;
   color: #888;
@@ -283,34 +293,14 @@
   color: #eee;
 }
 
-.blog-content a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-  position: relative;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid rgba(255, 140, 0, 0.3);
-  padding: 0 2px;
-  display: inline-flex;
-  align-items: center;
+.blog-content ::ng-deep a {
+  color: inherit !important;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
 }
 
-.blog-content a::after {
-  content: '↗';
-  font-size: 0.8em;
-  margin-left: 4px;
-  transition: transform 0.3s ease;
-}
-
-.blog-content a:hover {
-  color: #fff;
-  background: rgba(255, 140, 0, 0.2);
-  border-bottom-color: var(--primary);
-  border-radius: 4px;
-}
-
-.blog-content a:hover::after {
-  transform: translate(2px, -2px);
+.blog-content ::ng-deep a:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {

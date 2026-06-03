@@ -1,6 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+interface TeamMember {
+  name: string;
+  profileUrl?: string;
+}
+
+interface Team {
+  name: string;
+  role: string;
+  rank: string;
+  members: TeamMember[];
+  substitutes: TeamMember[];
+  schedule: { day: string; time: string; event: string }[];
+}
+
 @Component({
   selector: 'app-teams',
   standalone: true,
@@ -9,13 +23,22 @@ import { CommonModule } from '@angular/common';
   styleUrl: './teams.component.css'
 })
 export class TeamsComponent {
-  teams = [
+  teams: Team[] = [
     {
       name: 'Estrelic',
       role: 'NLC Team',
       rank: 'Diamond/Master',
-      members: ['Top: Kaenic', 'Jungle: Gollumfish', 'Mid: Navy', 'ADC: OPEN', 'Support: Dretas'],
-      substitutes: ['Sub 1: Astro', 'Sub 2: OPEN'],
+      members: [
+        { name: 'Top: Kaenic' },
+        { name: 'Jungle: Gollumfish' },
+        { name: 'Mid: Navy' },
+        { name: 'ADC: OPEN' },
+        { name: 'Support: Dretas', profileUrl: 'https://www.youtube.com/@DretasOfficial/videos' }
+      ],
+      substitutes: [
+        { name: 'Sub 1: Astro' },
+        { name: 'Sub 2: OPEN' }
+      ],
       schedule: [
         { day: 'Wednesday', time: '20:30 CET', event: 'Scrims' },
         { day: 'Thursday', time: '19:00 CET', event: 'Scrims' },
@@ -27,8 +50,17 @@ export class TeamsComponent {
       name: 'Vyre',
       role: 'BENELUX Team',
       rank: 'Master',
-      members: ['Top: Kamazo', 'Jungle: OPEN', 'Mid: Minus-one', 'ADC: DegeMic', 'Support: KrayonBlaDe'],
-      substitutes: ['Sub 1: Esat', 'Sub 2: OPEN'],
+      members: [
+        { name: 'Top: Kamazo' },
+        { name: 'Jungle: Jhon WEAKKK' },
+        { name: 'Mid: Minus-one' },
+        { name: 'ADC: DegeMic' },
+        { name: 'Support: KrayonBlaDe' }
+      ],
+      substitutes: [
+        { name: 'Sub 1: Esat' },
+        { name: 'Sub 2: OPEN' }
+      ],
       schedule: [
         { day: 'Wednesday', time: '19:00 CET', event: 'Scrims' },
         { day: 'Saturday', time: '19:00 CET', event: 'Scrims' }
@@ -38,8 +70,17 @@ export class TeamsComponent {
       name: 'Hyperion',
       role: 'DACH Team',
       rank: 'Master',
-      members: ['Top: OPEN', 'Jungle: OPEN', 'Mid: FILLED', 'ADC: OPEN', 'Support: TRYOUTS ONGOING'],
-      substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
+      members: [
+        { name: 'Top: OPEN' },
+        { name: 'Jungle: OPEN' },
+        { name: 'Mid: FILLED' },
+        { name: 'ADC: OPEN' },
+        { name: 'Support: TRYOUTS ONGOING' }
+      ],
+      substitutes: [
+        { name: 'Sub 1: OPEN' },
+        { name: 'Sub 2: OPEN' }
+      ],
       schedule: [
       ]
     },
@@ -47,8 +88,17 @@ export class TeamsComponent {
       name: 'Molotov',
       role: 'UK Team',
       rank: 'Master',
-      members: ['Top: Kamazo', 'Jungle: Robert123', 'Mid: TRYOUTS ONGOING', 'ADC: Hisoka', 'Support: Pelican'],
-      substitutes: ['Sub 1: OPEN', 'Sub 2: OPEN'],
+      members: [
+        { name: 'Top: Kamazo' },
+        { name: 'Jungle: Robert123' },
+        { name: 'Mid: TRYOUTS ONGOING' },
+        { name: 'ADC: Hisoka' },
+        { name: 'Support: Pelican' }
+      ],
+      substitutes: [
+        { name: 'Sub 1: OPEN' },
+        { name: 'Sub 2: OPEN' }
+      ],
       schedule: [
         { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
         { day: 'Friday', time: '19:00 CET', event: 'Scrims' }
@@ -56,11 +106,17 @@ export class TeamsComponent {
     }
   ];
 
-  generalSubstitutes = {
+  generalSubstitutes: { name: string; role: string; rank: string; members: TeamMember[]; substitutes: TeamMember[] } = {
     name: 'Substitutes list',
     role: 'Substitutes',
     rank: 'Emerald/Master',
-    members: ['Tilko185', 'Esat', 'Astro', 'Kasumi', 'Ihwa',],
+    members: [
+      { name: 'Tilko185' },
+      { name: 'Esat' },
+      { name: 'Astro' },
+      { name: 'Kasumi' },
+      { name: 'Ihwa' }
+    ],
     substitutes: [],
   };
 

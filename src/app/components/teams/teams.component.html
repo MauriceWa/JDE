@@ -11,13 +11,23 @@
         <section class="roster">
           <h3>Roster</h3>
           <ul>
-            <li *ngFor="let member of team.members">{{ member }}</li>
+            <li *ngFor="let member of team.members">
+              <ng-container *ngIf="member && member.name">
+                <a *ngIf="member.profileUrl; else memberNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
+                <ng-template #memberNameOnly>{{ member.name }}</ng-template>
+              </ng-container>
+            </li>
           </ul>
         </section>
         <section class="roster substitutes">
           <h3>Substitutes</h3>
           <ul>
-            <li *ngFor="let sub of team.substitutes">{{ sub }}</li>
+            <li *ngFor="let sub of team.substitutes">
+              <ng-container *ngIf="sub && sub.name">
+                <a *ngIf="sub.profileUrl; else subNameOnly" [href]="sub.profileUrl" target="_blank" class="member-link">{{ sub.name }}</a>
+                <ng-template #subNameOnly>{{ sub.name }}</ng-template>
+              </ng-container>
+            </li>
           </ul>
         </section>
         <section class="schedule-section" *ngIf="team.schedule && team.schedule.length > 0">
@@ -45,7 +55,12 @@
         <section class="roster">
           <h3>Members</h3>
           <ul class="substitutes-horizontal-list">
-            <li *ngFor="let member of generalSubstitutes.members">{{ member }}</li>
+            <li *ngFor="let member of generalSubstitutes.members">
+              <ng-container *ngIf="member && member.name">
+                <a *ngIf="member.profileUrl; else memberNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
+                <ng-template #memberNameOnly>{{ member.name }}</ng-template>
+              </ng-container>
+            </li>
           </ul>
         </section>
       </div>

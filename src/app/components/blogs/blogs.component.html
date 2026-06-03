@@ -16,7 +16,7 @@
                  'tournament': update.type === 'tournament'
                }">
             <div class="update-header">
-              <span class="update-name">{{ update.name }}</span>
+              <span class="update-name" [innerHTML]="update.name"></span>
               <time class="update-date" [attr.datetime]="update.date">{{ update.date }}</time>
             </div>
             <div class="update-details">
