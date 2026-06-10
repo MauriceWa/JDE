@@ -29,21 +29,19 @@ export class TeamsComponent {
       role: 'NLC Team',
       rank: 'Diamond/Master',
       members: [
-        { name: 'Top: Kaenic' },
+        { name: 'Top: Ture' },
         { name: 'Jungle: Gollumfish' },
-        { name: 'Mid: Navy' },
-        { name: 'ADC: OPEN' },
-        { name: 'Support: Dretas', profileUrl: 'https://www.youtube.com/@DretasOfficial/videos' }
+        { name: 'Mid: Minus-one' },
+        { name: 'ADC: Maxers' },
+        { name: 'Support: AstaPasta' }
       ],
       substitutes: [
         { name: 'Sub 1: Astro' },
         { name: 'Sub 2: OPEN' }
       ],
       schedule: [
-        { day: 'Wednesday', time: '20:30 CET', event: 'Scrims' },
-        { day: 'Thursday', time: '19:00 CET', event: 'Scrims' },
-        { day: 'Saturday', time: '14:00 CET', event: 'Scrims' },
-        { day: 'Sunday', time: '14:00 CET', event: 'Scrims' }
+        { day: 'Thursday', time: '19:00', event: 'Scrims' },
+        { day: 'Saturday', time: '19:00', event: 'Scrims' }
       ]
     },
     {
@@ -51,30 +49,30 @@ export class TeamsComponent {
       role: 'BENELUX Team',
       rank: 'Master',
       members: [
-        { name: 'Top: Kamazo' },
-        { name: 'Jungle: Jhon WEAKKK' },
-        { name: 'Mid: Minus-one' },
+        { name: 'Top: TRYOUTS ONGOING' },
+        { name: 'Jungle: Hjallern' },
+        { name: 'Mid: OPEN' },
         { name: 'ADC: DegeMic' },
-        { name: 'Support: KrayonBlaDe' }
+        { name: 'Support: Matog' }
       ],
       substitutes: [
         { name: 'Sub 1: Esat' },
-        { name: 'Sub 2: OPEN' }
+        { name: 'Sub 2: KrayonBlaDe' }
       ],
       schedule: [
-        { day: 'Wednesday', time: '19:00 CET', event: 'Scrims' },
-        { day: 'Saturday', time: '19:00 CET', event: 'Scrims' }
+        { day: 'Wednesday', time: '19:00', event: 'Scrims' },
+        { day: 'Sunday', time: '19:00', event: 'Scrims' }
       ]
     },
     {
       name: 'Hyperion',
       role: 'DACH Team',
-      rank: 'Master',
+      rank: 'Diamond/Master',
       members: [
-        { name: 'Top: OPEN' },
-        { name: 'Jungle: OPEN' },
-        { name: 'Mid: FILLED' },
-        { name: 'ADC: OPEN' },
+        { name: 'Top: Kaenic' },
+        { name: 'Jungle: Astro' },
+        { name: 'Mid: Navy' },
+        { name: 'ADC: Maxers' },
         { name: 'Support: TRYOUTS ONGOING' }
       ],
       substitutes: [
@@ -82,6 +80,8 @@ export class TeamsComponent {
         { name: 'Sub 2: OPEN' }
       ],
       schedule: [
+        { day: 'Monday', time: '19:00', event: 'Scrims' },
+        { day: 'Friday', time: '19:00', event: 'Scrims' }
       ]
     },
     {
@@ -91,17 +91,17 @@ export class TeamsComponent {
       members: [
         { name: 'Top: Kamazo' },
         { name: 'Jungle: Robert123' },
-        { name: 'Mid: TRYOUTS ONGOING' },
+        { name: 'Mid: Esat' },
         { name: 'ADC: Hisoka' },
-        { name: 'Support: Pelican' }
+        { name: 'Support: TRYOUTS ONGOING' }
       ],
       substitutes: [
         { name: 'Sub 1: OPEN' },
         { name: 'Sub 2: OPEN' }
       ],
       schedule: [
-        { day: 'Tuesday', time: '19:00 CET', event: 'Scrims' },
-        { day: 'Friday', time: '19:00 CET', event: 'Scrims' }
+        { day: 'Tuesday', time: '19:00', event: 'Scrims' },
+        { day: 'Friday', time: '19:00', event: 'Scrims' }
       ]
     }
   ];
@@ -112,9 +112,8 @@ export class TeamsComponent {
     rank: 'Emerald/Master',
     members: [
       { name: 'Tilko185' },
-      { name: 'Esat' },
       { name: 'Astro' },
-      { name: 'Kasumi' },
+      { name: 'KrayonBlaDe' },
       { name: 'Ihwa' }
     ],
     substitutes: [],
@@ -156,6 +155,12 @@ export class TeamsComponent {
       role: 'ANALYST',
       description: 'Analyzes gameplay, opponents, and performance data to support strategic preparation and ' +
         'improve team decision-making.'
+    },
+    {
+      name: 'Dretas',
+      role: 'JUNIOR OPERATIONS STAFF',
+      description: 'Assists with various organizational tasks and supports the operations team in maintaining community standards and event management.',
+      profileUrl: 'https://www.youtube.com/@DretasOfficial/videos'
     }
   ];
 }

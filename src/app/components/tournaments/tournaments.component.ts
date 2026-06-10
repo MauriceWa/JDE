@@ -13,7 +13,7 @@ export class TournamentsComponent {
     {
       name: 'Jung Dog Trials ',
       date: '5th of June 2026',
-      status: 'Register is Open',
+      status: 'Completed',
       prizepool: 'TBD',
       description: 'Our trial open tournament for all League of Legends teams.'
     },

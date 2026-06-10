@@ -20,6 +20,13 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Jung Dogs Trials: Tournament Results!',
+      date: 'June 5, 2026',
+      summary: 'The results are in for the Jung Dogs Trials! Congratulations to our winners.',
+      content: 'We are excited to share the results of the recently concluded Jung Dogs Trials tournament. It was a day of intense competition and high-level play on the Rift. After several hard-fought matches, the final standings are: <strong>1st Place: Estrelic</strong>, <strong>2nd Place: Quintet of Legends</strong>, and <strong>3rd Place: Vyre</strong>. We want to thank all teams who participated and made this event a success. Stay tuned for more tournaments coming soon!',
+      author: 'Management'
+    },
+    {
       title: 'Fuel Your Game: Partnering with DUBBY',
       date: 'June 3, 2026',
       summary: 'We are thrilled to announce our official partnership with DUBBY Energy!',
@@ -83,7 +90,8 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
-      { date: 'Jun 2', name: 'Jhon WEAKKK', role: 'Jungle ', action: 'Joined' },
+      { type: 'tournament', date: 'Jun 5', name: 'Estrelic | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '1st place' },
+      { type: 'tournament', date: 'Jun 5', name: 'Vyre | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '3rd place' },
       { date: 'May 29', name: 'Pelican', role: 'Support ', action: 'Joined' },
       { date: 'May 28', name: 'Hisoka', role: 'ADC ', action: 'Joined' },
       { date: 'May 26', name: 'Robert123', role: 'Jungle ', action: 'Joined' },
@@ -111,9 +119,8 @@ export class BlogsComponent implements OnInit {
       { date: 'Apr 8', name: 'minus_one', role: 'Midlaner', action: 'Joined' },
       { date: 'Mar 30', name: 'Ilias', role: 'Administration Coordinator', action: 'Joined' },
       { date: 'Mar 30', name: 'gollumfish', role: 'Substitute', action: 'Joined' },
-      { date: 'Mar 27', name: 'Jhon WEAKKK', role: 'Jungle', action: 'Joined' },
       { date: 'Mar 27', name: 'Kamazo', role: 'Toplaner', action: 'Joined' },
-      { date: 'Mar 26', name: 'Dretas', role: 'Support', action: 'Joined' },
+      { date: 'Mar 26', name: 'Dretas', role: 'Junior Staff', action: 'Joined' },
       { date: 'Mar 26', name: 'Touanité', role: 'ADC', action: 'Joined' },
       { date: 'Mar 25', name: 'DegeMic', role: 'ADC', action: 'Joined' },
       { date: 'Mar 25', name: 'Astrø', role: 'Jungle', action: 'Joined' },
