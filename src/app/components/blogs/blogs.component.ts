@@ -20,6 +20,13 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Community Highlight: Meccha Chameleon Game Night!',
+      date: 'June 17, 2026',
+      summary: 'Our recent community game night was a massive success with a full lobby of teammates!',
+      content: 'Yesterday\'s game night was an absolute blast! We had a full lobby of teammates joining in for some high-energy rounds of Meccha Chameleon. It was great to see everyone coming together, showing off their skills (and some hilarious fails), and just having a fantastic time outside of the usual competitive Rift matches. These moments of camaraderie are what make Jung Dogs Esports more than just a team. Thanks to everyone who participated and made it such a memorable night!',
+      author: 'Management'
+    },
+    {
       title: 'Jung Dogs Trials: Tournament Results!',
       date: 'June 5, 2026',
       summary: 'The results are in for the Jung Dogs Trials! Congratulations to our winners.',
@@ -44,7 +51,7 @@ export class BlogsComponent implements OnInit {
       title: 'Molotov Roster Complete!',
       date: 'May 31, 2026',
       summary: 'Our UK League team, Molotov, is now fully rostered and ready for action!',
-      content: 'We are thrilled to announce that our UK team, Molotov, has officially finalized its roster. After an intensive scouting and tryout period, we have assembled a powerhouse lineup: Kamazo in the Top lane, Robert123 in the Jungle, Hisoka as ADC, and Pelican as Support. This talented group of players is already hard at work in scrims, preparing to represent Jung Dogs Esports in the UK League. We are confident in their potential and can\'t wait to see them compete!',
+      content: 'We are thrilled to announce that our UK team, Molotov, has officially finalized its roster. After an intensive scouting and tryout period, we have assembled a powerhouse lineup: Kamazo in the Top lane, Robert123 in the Jungle, and Hisoka as ADC. This talented group of players is already hard at work in scrims, preparing to represent Jung Dogs Esports in the UK League. We are confident in their potential and can\'t wait to see them compete!',
       author: 'Management'
     },
     {
@@ -90,20 +97,17 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'Jun 18', name: 'Maxers', role: 'ADC', action: 'Joined' },
       { type: 'tournament', date: 'Jun 5', name: 'Estrelic | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '1st place' },
       { type: 'tournament', date: 'Jun 5', name: 'Vyre | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '3rd place' },
-      { date: 'May 29', name: 'Pelican', role: 'Support ', action: 'Joined' },
       { date: 'May 28', name: 'Hisoka', role: 'ADC ', action: 'Joined' },
       { date: 'May 26', name: 'Robert123', role: 'Jungle ', action: 'Joined' },
-      { date: 'May 25', name: 'Kamazo', role: 'Top ', action: 'Joined' },
-      { date: 'May 17', name: 'Harry', role: 'ADC', action: 'Joined' },
       { date: 'May 9', name: 'Ihwa', role: 'Substitute', action: 'Joined' },
       { date: 'May 14', name: 'Tilko185', role: 'Substitute', action: 'Joined' },
       { date: 'May 9', name: 'Esat', role: 'Substitute', action: 'Joined' },
       { date: 'May 3', name: 'Brunooo', role: 'Jungle', action: 'Left' },
       { date: 'May 3', name: 'Tarquin', role: 'Support', action: 'Left' },
       { type: 'tournament', date: 'May 2', name: 'Vyre | Benelux Ascend Series', role: 'Open Qualifier 3', action: 'DNF' },
-      { date: 'Apr 29', name: 'Sayonara', role: 'Analyst', action: 'Joined' },
       { date: 'Apr 28', name: 'Toxic', role: 'Analyst', action: 'Joined' },
       { date: 'Apr 25', name: 'tilko185', role: 'Substitute', action: 'Joined' },
       { date: 'Apr 25', name: 'Save3rs', role: 'Coach', action: 'Joined' },

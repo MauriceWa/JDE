@@ -8,14 +8,11 @@
 .title-3d {
   text-align: center;
   color: #00ff7f;
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 7vw, 4rem);
   text-transform: uppercase;
   margin-bottom: 10px;
-  text-shadow:
-    1px 1px 0px #008f47,
-    2px 2px 0px #008f47,
-    3px 3px 0px #008f47,
-    4px 4px 5px rgba(0,0,0,0.5);
+  font-weight: 900;
+  text-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
 }
 
 .subtitle {
@@ -45,9 +42,9 @@
 }
 
 .patch-notes-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 4px;
   border: 1px solid rgba(0, 255, 127, 0.2);
   text-align: left;
 }
@@ -87,14 +84,14 @@
 
 .update-item {
   background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 12px;
   border-left: 3px solid #ccc;
   transition: background 0.2s ease;
 }
 
 .update-item:hover {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .update-item.addition {
@@ -107,7 +104,7 @@
 
 .update-item.tournament {
   border-left-color: #ffd700;
-  background: rgba(255, 215, 0, 0.05);
+  background: rgba(255, 215, 0, 0.1);
 }
 
 .tournament .update-name {
@@ -210,15 +207,15 @@
 }
 
 .blog-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   padding: 25px;
-  border-radius: 15px;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .blog-item:hover {
-  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.08);
   border-color: #00ff7f;
 }
 
@@ -265,11 +262,11 @@
 }
 
 .back-btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #00ff7f;
   padding: 10px 20px;
-  border-radius: 30px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
   margin-bottom: 30px;
@@ -277,7 +274,7 @@
 }
 
 .back-btn:hover {
-  background: rgba(0, 255, 127, 0.1);
+  background: rgba(0, 255, 127, 0.05);
   border-color: #00ff7f;
 }
 

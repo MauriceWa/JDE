@@ -1,11 +1,58 @@
-<section class="org-hero">
-  <div class="hero-content">
-    <div class="logo-wrapper">
-      <img src="./FullLogo_Transparent.png" alt="Jung Dogs Esports League of Legends Open Tournament Qualifiers Logo" class="hero-logo" />
+<div class="home-page-container">
+  <div class="home-decorations" aria-hidden="true">
+    <div class="watermark top">
+      <img src="./IconOnly.png" alt="">
     </div>
+    <div class="watermark bottom">
+      <img src="./IconOnly.png" alt="">
+    </div>
+    <div class="tech-grid"></div>
+    <div class="floating-particles">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+      <div class="particle p6"></div>
+      <div class="particle p7"></div>
+      <div class="particle p8"></div>
+    </div>
+  </div>
 
-    <div class="hero-slogan">
-      <h1 class="slogan-text">Built to outplay.</h1>
+  <section class="org-hero">
+    <div class="hero-content">
+      <div class="logo-wrapper">
+        <img src="./FullLogo_Transparent.png" alt="Jung Dogs Esports League of Legends Open Tournament Qualifiers Logo" class="hero-logo" />
+      </div>
+
+      <div class="hero-slogan">
+        <h1 class="slogan-text">Built to outplay.</h1>
+      </div>
+
+      <div class="hero-actions">
+        <a routerLink="/tournaments" class="hero-btn primary">Tournaments</a>
+        <a href="https://discord.gg/g6p7dHjAa9" target="_blank" class="hero-btn secondary">Discord</a>
+      </div>
+    </div>
+  </section>
+
+<section class="stats-bar">
+  <div class="stats-container">
+    <div class="stat-item">
+      <span class="stat-value">{{ stats.activeTeams }}</span>
+      <span class="stat-label">Active Teams</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">{{ stats.openSpots }}</span>
+      <span class="stat-label">Open Spots</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">{{ stats.filledSpots }}</span>
+      <span class="stat-label">Filled Spots</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">{{ stats.staffAmount }}</span>
+      <span class="stat-label">Staff Amount</span>
     </div>
   </div>
 </section>
@@ -147,3 +194,4 @@
     </div>
   </div>
 </section>
+</div>

@@ -11,18 +11,18 @@ import { CommonModule } from '@angular/common';
 export class TournamentsComponent {
   tournaments = [
     {
+      name: 'Jung Dogs Cup',
+      date: 'Early August 2026',
+      status: 'Upcoming',
+      prizepool: 'None',
+      description: 'Our first official tournament.'
+    },
+    {
       name: 'Jung Dog Trials ',
       date: '5th of June 2026',
       status: 'Completed',
       prizepool: 'TBD',
       description: 'Our trial open tournament for all League of Legends teams.'
     },
-    // {
-    //   name: 'Spring Split Invitational',
-    //   date: 'March 2026',
-    //   status: 'Completed',
-    //   prizepool: '$1000',
-    //   description: 'A prestigious invitational featuring the top 8 teams.'
-    // }
   ];
 }

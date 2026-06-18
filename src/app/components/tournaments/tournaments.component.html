@@ -4,29 +4,43 @@
     <p class="subtitle">Join our upcoming events and show your skills on the Rift.</p>
   </header>
 
-  <div class="tournament-grid">
-    <article *ngFor="let tournament of tournaments" class="tournament-card-3d" [class.completed]="tournament.status === 'Completed'">
-      <div class="card-content">
-        <header class="card-header">
-          <h2 class="h3-style">{{ tournament.name }}</h2>
-          <span class="status-badge" [class.badge-upcoming]="tournament.status === 'Upcoming'">
-            {{ tournament.status }}
-          </span>
-        </header>
-        <div class="card-body">
-          <p class="date"><span aria-hidden="true">📅</span> <span class="sr-only">Date: </span> {{ tournament.date }}</p>
-          <p class="prizepool"><span aria-hidden="true">💰</span> <span class="sr-only">Prizepool: </span> {{ tournament.prizepool }}</p>
-          <p class="description">{{ tournament.description }}</p>
-        </div>
-        <footer class="card-footer">
-          <a *ngIf="tournament.status !== 'Completed'" href="https://discord.gg/g6p7dHjAa9" target="_blank" class="btn-3d">
-            Register Now
-          </a>
-          <button *ngIf="tournament.status === 'Completed'" class="btn-3d" disabled>
-            Registration Closed
-          </button>
-        </footer>
+  <div class="tournament-list">
+    <div class="list-header" aria-hidden="true">
+      <span class="col-status">Status</span>
+      <span class="col-info">Tournament</span>
+      <span class="col-date">Date</span>
+      <span class="col-prize">Prize Pool</span>
+      <span class="col-action"></span>
+    </div>
+
+    <div *ngFor="let tournament of tournaments" class="tournament-row" [class.completed]="tournament.status === 'Completed'">
+      <div class="col-status">
+        <span class="status-badge" [class.badge-upcoming]="tournament.status === 'Upcoming'">
+          {{ tournament.status }}
+        </span>
       </div>
-    </article>
+
+      <div class="col-info">
+        <h3>{{ tournament.name }}</h3>
+        <p>{{ tournament.description }}</p>
+      </div>
+
+      <div class="col-date">
+        <span class="label-mobile">Date:</span>
+        <span class="icon" aria-hidden="true">📅</span> {{ tournament.date }}
+      </div>
+
+      <div class="col-prize">
+        <span class="label-mobile">Prize Pool:</span>
+        <span class="icon" aria-hidden="true">💰</span> {{ tournament.prizepool }}
+      </div>
+
+      <div class="col-action">
+        <a *ngIf="tournament.status !== 'Completed'" href="https://discord.gg/g6p7dHjAa9" target="_blank" class="btn-action">
+          Register
+        </a>
+        <span *ngIf="tournament.status === 'Completed'" class="status-text">Registration Closed</span>
+      </div>
+    </div>
   </div>
 </section>

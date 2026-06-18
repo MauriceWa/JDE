@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {RouterLink} from "@angular/router";
+import { OrgDataService } from '../../services/org-data.service';
 
 interface Clip {
   title: string;
@@ -19,10 +20,18 @@ interface Clip {
   templateUrl: './org-info.component.html',
   styleUrl: './org-info.component.css'
 })
-export class OrgInfoComponent {
+export class OrgInfoComponent implements OnInit {
+  private orgDataService = inject(OrgDataService);
+
   activeTab = 'tournaments';
   currentClipIndex = 0;
   isAnimating = false;
+  stats = {
+    activeTeams: 0,
+    openSpots: 0,
+    filledSpots: 0,
+    staffAmount: 0
+  };
 
   clips: Clip[] = [
     {
@@ -56,6 +65,10 @@ export class OrgInfoComponent {
       videoUrl: '0f4bd22d-8cbb-47a7-a101-b3ad7051ebb3.mp4'
     }
   ];
+
+  ngOnInit() {
+    this.stats = this.orgDataService.getStats();
+  }
 
   setActiveTab(tab: string) {
     this.activeTab = tab;

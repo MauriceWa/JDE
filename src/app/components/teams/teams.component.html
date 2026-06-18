@@ -1,68 +1,92 @@
 <section class="teams-container">
-  <h1 class="title-3d">Our Teams</h1>
-  <div class="teams-grid">
-    <article *ngFor="let team of teams" class="team-card-3d">
-      <header class="team-header">
-        <h2>{{ team.name }}</h2>
-        <span class="team-badge">{{ team.role }}</span>
-      </header>
-      <div class="team-info">
-        <p><strong>Rank:</strong> {{ team.rank }}</p>
-        <section class="roster">
-          <h3>Roster</h3>
-          <ul>
-            <li *ngFor="let member of team.members">
-              <ng-container *ngIf="member && member.name">
-                <a *ngIf="member.profileUrl; else memberNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
-                <ng-template #memberNameOnly>{{ member.name }}</ng-template>
-              </ng-container>
-            </li>
-          </ul>
-        </section>
-        <section class="roster substitutes">
-          <h3>Substitutes</h3>
-          <ul>
-            <li *ngFor="let sub of team.substitutes">
-              <ng-container *ngIf="sub && sub.name">
-                <a *ngIf="sub.profileUrl; else subNameOnly" [href]="sub.profileUrl" target="_blank" class="member-link">{{ sub.name }}</a>
-                <ng-template #subNameOnly>{{ sub.name }}</ng-template>
-              </ng-container>
-            </li>
-          </ul>
-        </section>
-        <section class="schedule-section" *ngIf="team.schedule && team.schedule.length > 0">
-          <h3>Schedule</h3>
-          <div class="schedule-grid">
-            <div *ngFor="let item of team.schedule" class="schedule-item">
-              <span class="schedule-day">{{ item.day }}</span>
-              <span class="schedule-time">{{ item.time }}</span>
-              <span class="schedule-event">{{ item.event }}</span>
+  <header class="page-header">
+    <h1 class="title-3d">Our Teams</h1>
+    <p class="subtitle">Competing at the highest levels across regional leagues.</p>
+  </header>
+
+  <div class="teams-list">
+    <article *ngFor="let team of teams" class="team-section">
+      <div class="team-brand">
+        <div class="brand-info">
+          <h2>{{ team.name }}</h2>
+          <span class="team-badge">{{ team.role }}</span>
+        </div>
+        <div class="team-meta">
+          <span class="meta-label">Average Rank</span>
+          <span class="meta-value">{{ team.rank }}</span>
+        </div>
+      </div>
+
+      <div class="team-content">
+        <div class="roster-column">
+          <div class="roster-header">
+            <h3>Active Roster</h3>
+          </div>
+          <div class="roster-grid">
+            <div *ngFor="let member of team.members" class="member-row">
+              <span class="member-role">{{ member.role }}</span>
+              <div class="member-name">
+                <ng-container *ngIf="member && member.name">
+                  <a *ngIf="member.profileUrl; else memberNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
+                  <ng-template #memberNameOnly>{{ member.name }}</ng-template>
+                </ng-container>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="roster-column">
+          <div class="roster-header">
+            <h3>Substitutes</h3>
+          </div>
+          <div class="roster-grid">
+            <div *ngFor="let sub of team.substitutes" class="member-row sub">
+              <span class="member-role">{{ sub.role }}</span>
+              <div class="member-name">
+                <ng-container *ngIf="sub && sub.name">
+                  <a *ngIf="sub.profileUrl; else subNameOnly" [href]="sub.profileUrl" target="_blank" class="member-link">{{ sub.name }}</a>
+                  <ng-template #subNameOnly>{{ sub.name }}</ng-template>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-column" *ngIf="team.schedule && team.schedule.length > 0">
+          <div class="roster-header">
+            <h3>Weekly Schedule</h3>
+          </div>
+          <div class="schedule-list">
+            <div *ngFor="let item of team.schedule" class="schedule-row">
+              <span class="sch-day">{{ item.day }}</span>
+              <span class="sch-time">{{ item.time }}</span>
+              <span class="sch-event">{{ item.event }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
   </div>
 
-  <div class="general-substitutes-container">
-    <article class="team-card-3d general-sub-card">
-      <header class="team-header">
-        <h2>{{ generalSubstitutes.name }}</h2>
-        <span class="team-badge">{{ generalSubstitutes.role }}</span>
-      </header>
-      <div class="team-info">
-        <p><strong>Rank:</strong> {{ generalSubstitutes.rank }}</p>
-        <section class="roster">
-          <h3>Members</h3>
-          <ul class="substitutes-horizontal-list">
-            <li *ngFor="let member of generalSubstitutes.members">
-              <ng-container *ngIf="member && member.name">
-                <a *ngIf="member.profileUrl; else memberNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
-                <ng-template #memberNameOnly>{{ member.name }}</ng-template>
-              </ng-container>
-            </li>
-          </ul>
-        </section>
+  <div class="general-substitutes-section">
+    <article class="team-section sub-list-section">
+      <div class="team-brand">
+        <div class="brand-info">
+          <h2>{{ generalSubstitutes.name }}</h2>
+          <span class="team-badge">{{ generalSubstitutes.role }}</span>
+        </div>
+        <div class="team-meta">
+          <span class="meta-label">Pool Rank</span>
+          <span class="meta-value">{{ generalSubstitutes.rank }}</span>
+        </div>
+      </div>
+      <div class="team-content">
+        <div class="sub-pool-grid">
+          <div *ngFor="let member of generalSubstitutes.members" class="member-pill">
+            <span class="member-role">{{ member.role }}</span>
+            <span class="member-name">{{ member.name }}</span>
+          </div>
+        </div>
       </div>
     </article>
   </div>
@@ -72,18 +96,21 @@
   </div>
 
   <section class="staff-section">
-    <h2 class="title-3d staff-title">Our Staff</h2>
-    <div class="staff-grid">
-      <article *ngFor="let member of staff" class="staff-card-3d">
-        <header class="staff-header">
-          <h3>
-            <a *ngIf="member.profileUrl; else staffNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
-            <ng-template #staffNameOnly>{{ member.name }}</ng-template>
-          </h3>
-          <span class="staff-role">{{ member.role }}</span>
-        </header>
-        <div class="staff-info">
-          <p>{{ member.description }}</p>
+    <header class="section-header">
+      <h2 class="title-3d staff-title">Management & Staff</h2>
+      <p class="subtitle">The driving force behind Jung Dogs Esports.</p>
+    </header>
+    <div class="staff-list">
+      <article *ngFor="let member of staff" class="staff-item">
+        <div class="staff-main">
+          <div class="staff-id">
+            <h3>
+              <a *ngIf="member.profileUrl; else staffNameOnly" [href]="member.profileUrl" target="_blank" class="member-link">{{ member.name }}</a>
+              <ng-template #staffNameOnly>{{ member.name }}</ng-template>
+            </h3>
+            <span class="staff-role">{{ member.role }}</span>
+          </div>
+          <p class="staff-desc">{{ member.description }}</p>
         </div>
       </article>
     </div>
