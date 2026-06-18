@@ -33,7 +33,7 @@ export class TeamsComponent {
         { name: 'Jungle: Gollumfish' },
         { name: 'Mid: Minus-one' },
         { name: 'ADC: Maxers' },
-        { name: 'Support: AstaPasta' }
+        { name: 'Support: TRYOUTS ONGOING' }
       ],
       substitutes: [
         { name: 'Sub 1: Astro' },
@@ -50,8 +50,8 @@ export class TeamsComponent {
       rank: 'Master',
       members: [
         { name: 'Top: TRYOUTS ONGOING' },
-        { name: 'Jungle: Hjallern' },
-        { name: 'Mid: OPEN' },
+        { name: 'Jungle: TRYOUTS ONGOING' },
+        { name: 'Mid: TRYOUTS ONGOING' },
         { name: 'ADC: DegeMic' },
         { name: 'Support: Matog' }
       ],
@@ -81,7 +81,8 @@ export class TeamsComponent {
       ],
       schedule: [
         { day: 'Monday', time: '19:00', event: 'Scrims' },
-        { day: 'Friday', time: '19:00', event: 'Scrims' }
+        { day: 'Friday', time: '19:00', event: 'Scrims' },
+        { day: 'Saturday', time: '17:00', event: 'Vod Review' }
       ]
     },
     {
