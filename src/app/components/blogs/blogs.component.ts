@@ -44,14 +44,14 @@ export class BlogsComponent implements OnInit {
       title: 'New Partners: BotDiff Coaching',
       date: 'June 1, 2026',
       summary: 'We are excited to announce our partnership with BotDiff Coaching, led by Krayonblade and Degemic!',
-      content: 'Jung Dogs Esports is proud to welcome Krayonblade and Degemic as our official coaching partners. Through their platform, <a href="https://botdiffcoaching.com" target="_blank">botdiffcoaching.com</a>, they provide top-tier coaching services to help players master the Rift. This partnership marks a significant step in our commitment to player development and excellence.',
+      content: 'Jung Dogs Esports is proud to welcome Krayonblade and Degemic as our official coaching partners. Through their platform, <a href="https://botdiffcoaching.com" target="_blank">botdiffcoaching.com</a>, they provide professional coaching services to help players master the Rift. This partnership marks a significant step in our commitment to player development and improvement.',
       author: 'Management'
     },
     {
       title: 'Molotov Roster Complete!',
       date: 'May 31, 2026',
       summary: 'Our UK League team, Molotov, is now fully rostered and ready for action!',
-      content: 'We are thrilled to announce that our UK team, Molotov, has officially finalized its roster. After an intensive scouting and tryout period, we have assembled a powerhouse lineup: Kamazo in the Top lane, Robert123 in the Jungle, and Hisoka as ADC. This talented group of players is already hard at work in scrims, preparing to represent Jung Dogs Esports in the UK League. We are confident in their potential and can\'t wait to see them compete!',
+      content: 'We are thrilled to announce that our UK team, Molotov, has officially finalized its roster. After an intensive scouting and tryout period, we have assembled a solid lineup: Kamazo in the Top lane, Robert123 in the Jungle, and Hisoka as ADC. This talented group of players is already hard at work in scrims, preparing to represent Jung Dogs Esports in the UK League. We are confident in their potential and can\'t wait to see them compete!',
       author: 'Management'
     },
     {
@@ -72,14 +72,14 @@ export class BlogsComponent implements OnInit {
       title: 'Expanding Our Reach: Prime League and UK League',
       date: 'May 16, 2026',
       summary: 'Jung Dogs Esports is proud to announce our entry into the Prime League and UK League with teams DEV and Molotov.',
-      content: 'As part of our commitment to competitive excellence, we are thrilled to announce that team DEV will be representing us in the Prime League, while team Molotov will be competing in the UK League. This expansion marks a significant milestone for Jung Dogs Esports as we continue to establish our presence in major regional leagues across Europe. We are currently finalizing our rosters and look forward to showing what our teams can do on the big stage!',
+      content: 'As part of our commitment to competitive growth, we are thrilled to announce that team DEV will be representing us in the Prime League, while team Molotov will be competing in the UK League. This expansion marks a significant milestone for Jung Dogs Esports as we continue to establish our presence in major regional leagues across Europe. We are currently finalizing our rosters and look forward to showing what our teams can do on the big stage!',
       author: 'Management'
     },
     {
       title: 'Welcome to Jung Dogs Esports',
       date: 'April 20, 2026',
       summary: 'Exciting news as we officially launch our new organizational website and team rosters!',
-      content: 'We are thrilled to announce the official launch of Jung Dogs Esports! Our new website serves as a hub for all our tournament information, blog updates, and community engagement. We have been working hard behind the scenes to assemble top-tier rosters for League of Legends and other competitive titles. Stay tuned for more updates as we continue to grow and compete at the highest levels.',
+      content: 'We are thrilled to announce the official launch of Jung Dogs Esports! Our new website serves as a hub for all our tournament information, blog updates, and community engagement. We have been working hard behind the scenes to assemble competitive rosters for League of Legends and other competitive titles. Stay tuned for more updates as we continue to grow and compete across the Rift.',
       author: 'Management'
     }
   ];
