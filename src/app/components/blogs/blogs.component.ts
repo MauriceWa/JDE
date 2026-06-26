@@ -20,6 +20,13 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Socials Section is Live!',
+      date: 'June 26, 2026',
+      summary: 'We now have a dedicated socials section where you can find and follow our streamers and members.',
+      content: 'We are excited to announce that Jung Dogs Esports now has a dedicated Socials section on our website! You can now easily find and follow your favorite Jung Dogs streamers and members across various platforms like Twitch and X. Check it out to see who\'s live and support the pack!',
+      author: 'Management'
+    },
+    {
       title: 'Community Highlight: Meccha Chameleon Game Night!',
       date: 'June 17, 2026',
       summary: 'Our recent community game night was a massive success with a full lobby of teammates!',
@@ -97,6 +104,11 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'Jun 26', name: 'SynLynx', role: 'Support', action: 'Joined' },
+      { date: 'Jun 26', name: 'RD', role: 'Jungle', action: 'Joined' },
+      { date: 'Jun 26', name: 'Zorka XL', role: 'Midlaner', action: 'Joined' },
+      { date: 'Jun 26', name: 'Paardje', role: 'Toplaner', action: 'Joined' },
+      { date: 'Jun 26', name: 'Robert123', role: 'Jungle', action: 'Left' },
       { date: 'Jun 18', name: 'Maxers', role: 'ADC', action: 'Joined' },
       { type: 'tournament', date: 'Jun 5', name: 'Estrelic | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '1st place' },
       { type: 'tournament', date: 'Jun 5', name: 'Vyre | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '3rd place' },

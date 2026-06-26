@@ -3,7 +3,7 @@
   <div class="bg-overlay"></div>
 </div>
 
-<header class="navbar">
+<header class="navbar" [class.scrolled]="isScrolled">
   <div class="nav-container">
     <a routerLink="/" class="nav-logo">
       <img src="./Grayscale_Transparent_NoBuffer.png" alt="Jung Dogs Esports League of Legends Tournament Qualifiers Logo" width="50" height="40">
@@ -26,6 +26,9 @@
         </li>
         <li>
           <a routerLink="/blogs" routerLinkActive="active" (click)="closeMenu()">Blogs</a>
+        </li>
+        <li>
+          <a routerLink="/socials" routerLinkActive="active" (click)="closeMenu()">Socials</a>
         </li>
         <li>
           <a routerLink="/sponsors" routerLinkActive="active" (click)="closeMenu()">Sponsors</a>
@@ -59,6 +62,7 @@
         <li><a routerLink="/tournaments">Tournaments</a></li>
         <li><a routerLink="/teams">Teams</a></li>
         <li><a routerLink="/blogs">Blogs</a></li>
+        <li><a routerLink="/socials">Socials</a></li>
         <li><a routerLink="/sponsors">Sponsors</a></li>
         <li><a routerLink="/contact">Contact</a></li>
       </ul>

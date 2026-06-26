@@ -12,6 +12,12 @@ import {NgOptimizedImage} from "@angular/common";
 export class AppComponent {
   title = 'JDE';
   isMenuOpen = false;
+  isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 20;
+  }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
