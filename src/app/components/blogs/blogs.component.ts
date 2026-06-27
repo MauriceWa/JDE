@@ -104,13 +104,13 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
-      { date: 'Jun 27', name: 'KrayonBlaDe', role: 'Head of Operations', action: 'Promoted' },
       { date: 'Jun 26', name: 'SynLynx', role: 'Support', action: 'Joined' },
       { date: 'Jun 26', name: 'RD', role: 'Jungle', action: 'Joined' },
       { date: 'Jun 26', name: 'Zorka XL', role: 'Midlaner', action: 'Joined' },
       { date: 'Jun 26', name: 'Paardje', role: 'Toplaner', action: 'Joined' },
       { date: 'Jun 26', name: 'Robert123', role: 'Jungle', action: 'Left' },
       { date: 'Jun 18', name: 'Maxers', role: 'ADC', action: 'Joined' },
+      { date: 'Jun 9', name: 'Dretas', role: 'Coach', action: 'Promoted' },
       { type: 'tournament', date: 'Jun 5', name: 'Estrelic | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '1st place' },
       { type: 'tournament', date: 'Jun 5', name: 'Vyre | Jung Dogs Trials', role: 'Jung Dogs Trials', action: '3rd place' },
       { date: 'May 28', name: 'Hisoka', role: 'ADC ', action: 'Joined' },
