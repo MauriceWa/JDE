@@ -50,8 +50,8 @@ export class BlogsComponent implements OnInit {
     {
       title: 'New Partners: BotDiff Coaching',
       date: 'June 1, 2026',
-      summary: 'We are excited to announce our partnership with BotDiff Coaching, led by Krayonblade and Degemic!',
-      content: 'Jung Dogs Esports is proud to welcome Krayonblade and Degemic as our official coaching partners. Through their platform, <a href="https://botdiffcoaching.com" target="_blank">botdiffcoaching.com</a>, they provide professional coaching services to help players master the Rift. This partnership marks a significant step in our commitment to player development and improvement.',
+      summary: 'We are excited to announce our partnership with BotDiff Coaching, led by KrayonBlaDe and Degemic!',
+      content: 'Jung Dogs Esports is proud to welcome KrayonBlaDe and Degemic as our official coaching partners. Through their platform, <a href="https://botdiffcoaching.com" target="_blank">botdiffcoaching.com</a>, they provide professional coaching services to help players master the Rift. This partnership marks a significant step in our commitment to player development and improvement.',
       author: 'Management'
     },
     {
@@ -104,6 +104,7 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'Jun 27', name: 'KrayonBlaDe', role: 'Head of Operations', action: 'Promoted' },
       { date: 'Jun 26', name: 'SynLynx', role: 'Support', action: 'Joined' },
       { date: 'Jun 26', name: 'RD', role: 'Jungle', action: 'Joined' },
       { date: 'Jun 26', name: 'Zorka XL', role: 'Midlaner', action: 'Joined' },
