@@ -27,16 +27,16 @@
 
       <div class="col-date">
         <span class="label-mobile">Date:</span>
-        <span class="icon" aria-hidden="true">📅</span> {{ tournament.date }}
+        {{ tournament.date }}
       </div>
 
       <div class="col-prize">
-        <span class="label-mobile">Prize Pool:</span>
-        <span class="icon" aria-hidden="true">💰</span> {{ tournament.prizepool }}
+        <span class="label-mobile">Prize:</span>
+        <span class="icon" aria-hidden="true">🏆</span> {{ tournament.prizepool }}
       </div>
 
       <div class="col-action">
-        <a *ngIf="tournament.status !== 'Completed'" href="https://discord.gg/g6p7dHjAa9" target="_blank" class="btn-action">
+        <a *ngIf="tournament.status !== 'Completed'" [href]="tournament.link" target="_blank" class="btn-action">
           Register
         </a>
         <span *ngIf="tournament.status === 'Completed'" class="status-text">Registration Closed</span>

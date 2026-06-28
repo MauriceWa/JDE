@@ -6,7 +6,6 @@
   position: relative;
 }
 
-/* Background Decorations */
 .tournaments-container::before {
   content: '';
   position: absolute;

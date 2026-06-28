@@ -20,6 +20,13 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Announcing the Jung Dogs Cup!',
+      date: 'June 28, 2026',
+      summary: 'Get ready for our next major tournament! The Jung Dogs Cup is coming this August with high-stakes action on the Rift.',
+      content: 'We are thrilled to announce our next official League of Legends tournament: the <strong>Jung Dogs Cup</strong>! Mark your calendars for <strong>August 8th, 2026</strong>. This is your chance to prove your skills, compete against top-tier talent, and show the strength of your pack. Registration is now open on Challengermode. Don\'t miss out on this opportunity to outplay the competition! <br><br> Register here: <a href="https://www.challengermode.com/tournaments/d3e09f4b-b169-43a2-a165-08decf4ad291?UTM_Campaign=SharedTournament" target="_blank">Jung Dogs Cup Registration</a>',
+      author: 'Management'
+    },
+    {
       title: 'Socials Section is Live!',
       date: 'June 26, 2026',
       summary: 'We now have a dedicated socials section where you can find and follow our streamers and members.',
@@ -104,6 +111,9 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'Jun 28', name: 'Team Freyja', role: 'WNB Team', action: 'Announced' },
+      { date: 'Jun 28', name: 'Jung Dogs Cup', role: 'Tournament', action: 'Announced' },
+      { date: 'Jun 28', name: 'Knockerrz', role: 'Support', action: 'Joined' },
       { date: 'Jun 26', name: 'SynLynx', role: 'Support', action: 'Joined' },
       { date: 'Jun 26', name: 'RD', role: 'Jungle', action: 'Joined' },
       { date: 'Jun 26', name: 'Zorka XL', role: 'Midlaner', action: 'Joined' },
