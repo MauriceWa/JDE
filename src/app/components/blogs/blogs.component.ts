@@ -20,6 +20,13 @@ export class BlogsComponent implements OnInit {
 
   blogs = [
     {
+      title: 'Introducing Team Freyja!',
+      date: 'June 29, 2026',
+      summary: 'We are proud to announce the formation of Team Freyja, our new dedicated Women and Non-Binary (WNB) roster.',
+      content: 'Jung Dogs Esports is committed to fostering an inclusive and diverse competitive environment. Today, we are excited to officially introduce <strong>Team Freyja</strong>, our new WNB roster. We believe in providing a platform for all talented players to shine, and Freyja marks a significant step in our mission to expand our presence across all levels of competitive play. <br><br> We are currently in the process of building this new legacy, with <strong>tryouts ongoing</strong> for all main positions. We are looking for dedicated, skilled, and passionate players who want to grow with the pack. If you are interested in joining Team Freyja, keep an eye on our Discord for tryout schedules and application details!',
+      author: 'Management'
+    },
+    {
       title: 'Announcing the Jung Dogs Cup!',
       date: 'June 28, 2026',
       summary: 'Get ready for our next major tournament! The Jung Dogs Cup is coming this August with high-stakes action on the Rift.',
