@@ -138,7 +138,6 @@ export class BlogsComponent implements OnInit {
       { date: 'May 3', name: 'Brunooo', role: 'Jungle', action: 'Left' },
       { date: 'May 3', name: 'Tarquin', role: 'Support', action: 'Left' },
       { type: 'tournament', date: 'May 2', name: 'Vyre | Benelux Ascend Series', role: 'Open Qualifier 3', action: 'DNF' },
-      { date: 'Apr 28', name: 'Toxic', role: 'Analyst', action: 'Joined' },
       { date: 'Apr 25', name: 'tilko185', role: 'Substitute', action: 'Joined' },
       { date: 'Apr 25', name: 'Save3rs', role: 'Coach', action: 'Joined' },
       { date: 'Apr 23', name: 'Kasumi', role: 'Substitute', action: 'Joined' },
