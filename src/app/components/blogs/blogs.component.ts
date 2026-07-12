@@ -118,11 +118,13 @@ export class BlogsComponent implements OnInit {
 
   generateUpdates() {
     const updates: any[] = [
+      { date: 'Jul 12', name: 'CKZ_Juska', role: 'ADC', action: 'Joined' },
+      { date: 'Jul 12', name: 'Navy', role: 'Midlaner', action: 'Left' },
       { date: 'Jun 28', name: 'Team Freyja', role: 'WNB Team', action: 'Announced' },
       { date: 'Jun 28', name: 'Jung Dogs Cup', role: 'Tournament', action: 'Announced' },
       { date: 'Jun 28', name: 'Knockerrz', role: 'Support', action: 'Joined' },
       { date: 'Jun 26', name: 'SynLynx', role: 'Support', action: 'Joined' },
-      { date: 'Jun 26', name: 'RD', role: 'Jungle', action: 'Joined' },
+      { date: 'Jun 26', name: 'RD7', role: 'Jungle', action: 'Joined' },
       { date: 'Jun 26', name: 'Zorka XL', role: 'Midlaner', action: 'Joined' },
       { date: 'Jun 26', name: 'Paardje', role: 'Toplaner', action: 'Joined' },
       { date: 'Jun 26', name: 'Robert123', role: 'Jungle', action: 'Left' },
